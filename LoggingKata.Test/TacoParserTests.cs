@@ -14,8 +14,8 @@ namespace LoggingKata.Test
 
         [Theory]
         [InlineData("34.07,-84.67,Taco Bell Acwort", 34.07, -84.67, "Taco Bell Acwort")]
-        [InlineData(" 31,-84.17,Taco Bell Albany", 31.00, -84.17, "Taco Bell Albany")]
-        [InlineData(" 31,0,Taco Bell Albany", 31.00, 0.00, "Taco Bell Albany")]
+        [InlineData("31,-84.17,Taco Bell Albany", 31.00, -84.17, "Taco Bell Albany")]
+        [InlineData("31,0,Taco Bell Albany", 31.00, 0.00, "Taco Bell Albany")]
 
 
         public void ShouldParse(string line, object expectedResult)
@@ -26,10 +26,10 @@ namespace LoggingKata.Test
 
             //Act
 
-            ITrackable actual = tester.Parse(line);
+            ITrackable taco = tester.Parse(line);
 
             //Assert
-            Assert.Equal(expectedResult, actual);
+            Assert.Equal(expectedResult, taco);
 
         }
      

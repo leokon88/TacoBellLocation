@@ -23,7 +23,7 @@
             // Do not fail if one record parsing fails, return null
             else
             {
-                TacoBell taco = new TacoBell( double.Parse(cells[0]), double.Parse(cells[0]), cells[2].ToString());
+                TacoBell taco = new TacoBell( double.Parse(cells[0]), double.Parse(cells[1]), cells[2].ToString());
                 return taco;
             }
         }
