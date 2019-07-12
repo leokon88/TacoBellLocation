@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LoggingKata
 {
-    class TacoBell:ITrackable
+    class TacoBell : ITrackable
     {
         public Point Location { get; set; }
         public string Name { get; set; }
@@ -20,7 +20,9 @@ namespace LoggingKata
             Name = name;
         }
 
-      
-      
+        public TacoBell()
+        {
+
+        }
     }
 }
