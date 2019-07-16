@@ -25,8 +25,8 @@
                 }
                 else
                 {
-                    TacoBell taco = new TacoBell(latitude, longitude, cells[2].ToString());
-                    return taco;
+                    TacoBell tacoBellLocation = new TacoBell(latitude, longitude, cells[2].ToString());
+                    return tacoBellLocation;
                 }
             }
         }

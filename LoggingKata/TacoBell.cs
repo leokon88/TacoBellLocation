@@ -10,12 +10,12 @@ namespace LoggingKata
         public string Name { get; set; }
 
 
-        public TacoBell(double lat, double lng, string name)
+        public TacoBell(double latitude, double longitude, string name)
         {
             Location = new Point
             {
-                Latitude = lat,
-                Longitude = lng
+                Latitude = latitude,
+                Longitude = longitude
             };
             Name = name;
         }
